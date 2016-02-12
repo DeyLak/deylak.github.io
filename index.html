@@ -1,0 +1,78 @@
+    <!DOCTYPE html>
+<html lang="ru" ng-app="app">
+<head>
+    <base href="/">
+    <meta charset="UTF-8">
+    <title>Хлебный сайт</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/font-awesome.min.css" type="text/css">
+
+    <link rel="stylesheet" href="static/css/app.css" type="text/css">
+
+</head>
+<body>
+
+    <header class="header">
+        <div class="dimmer dimmer--black padding-vertical--header">
+            <div class="header__wrapper">
+                <div class="header__content">
+                    <h1>Традиционный хлеб из живого зерна</h1>
+                    <h3>Полностью натуральный, чистый хлеб, несущий в себе здоровье от самой природы!</h3>
+                    <div class="proverb">
+                        <h1 class="text--x-large"><i><b>"Хлеб - всему голова!"</b></i></h1>
+                        <h4 class="float--right">Народное творчество</h4>
+                    </div>
+                </div>
+            </div>
+
+            <nav class="navmenu">
+                <div class="navmenu__wrapper">
+                    <ul class="navmenu-list">
+                        <li class="navmenu-list__item">
+                            <a href="/" class="navmenu-link">Производство</a>
+                        </li>
+                        <li class="navmenu-list__item">
+                            <a href="/benefits" class="navmenu-link">Польза</a>
+                        </li>
+                        <li class="navmenu-list__item">
+                            <a href="/order" class="navmenu-link">Заказать</a>
+                        </li>
+                        <li class="navmenu-list__item">
+                            <a href="/contacts" class="navmenu-link">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <ng-view></ng-view>
+
+    <footer class="footer">
+        <div class="dimmer dimmer--black padding-vertical--section">
+            <div class="footer__wrapper">
+                <div class="footer__content">
+                    <span class="float--left">
+                        <p>
+                            admin@yandex.ru
+                        </p>
+                        <p>
+                            г. Москва, ул. Первомайская, д. 23
+                        </p>
+                    </span>
+                    <span class="float--right">
+                        Звонок по России бесплатный
+                        <h2>+7 (495) 123-45-67</h2>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="static/js/app.js"></script>
+</body>
+</html>
